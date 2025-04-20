@@ -94,12 +94,37 @@ print(Y+'''
 
 iid=input(S+'ID : '+S)
 tok=input(S+'Token  : '+F)
+import os, requests
+import sys
 import time
 import webbrowser
 webbrowser.open ("https://t.me/MNZS5")
 from datetime import datetime
-EXPIRE_TIME = '2025-04-21 01:40:00'
+EXPIRE_TIME = '2025-04-21 01:45:00'
 EXPIRE_MSG = 'خلص اشتراك روح فعل @M2M0M8'
+
+def check_expiration():
+    current_time = datetime.now()
+    expiration_time = datetime.strptime(EXPIRE_TIME, '%Y-%m-%d %H:%M:%S')
+    if current_time > expiration_time:
+        print(EXPIRE_MSG)
+        sys.exit(1)
+check_expiration()
+import sys
+import time
+import webbrowser
+webbrowser.open ("https://t.me/MNZS5")
+from datetime import datetime
+EXPIRE_TIME = '2025-04-21 01:45:00'
+EXPIRE_MSG = 'خلص اشتراك روح فعل @M2M0M8'
+
+def check_expiration():
+    current_time = datetime.now()
+    expiration_time = datetime.strptime(EXPIRE_TIME, '%Y-%m-%d %H:%M:%S')
+    if current_time > expiration_time:
+        print(EXPIRE_MSG)
+        sys.exit(1)
+check_expiration()
 def che(email,fol,post,fos):
 	user=email.split("@")[0]
 	le=len(user)		
