@@ -521,7 +521,7 @@ def hso1():
                     ud = (users['user_info']['uid'])
                     user=(users['user_info']['unique_id'])
                     fol =(users['user_info']['follower_count'])
-                    if int(fol)>=50:
+                    if int(fol)>=250:
                     	pass
                     else:
                     	continue
@@ -554,7 +554,7 @@ def main():
      try:
         ii=int(input(f'{S}Choose What You Want In Choices? : '))
         if ii==1:
-               for i in range(5):
+               for i in range(50):
                     threading.Thread(target=hso1).start()
         elif ii==2:
                os.system("cls"if os.name=="nt"else"clear")
