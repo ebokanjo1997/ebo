@@ -1,5 +1,0 @@
-requests
-user_agent
-beautifulsoup4
-yt-dlp
-instaloader
